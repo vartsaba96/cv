@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vartsaba CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <table>
-        <tr>
-            <td><img src="media/photo_2022-04-06_20-28-59.jpg" alt="Здесь была моя фотка(:" width="200"></td>
-            <td>  <h1>Павел Варцаба</h1>
-                <p><em>Я фул стек разработчик</em></p>
-                <p>Я люлблю путешествовать, заниматься спротом и програмировать</p>
-            </td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="info">
+            <img src="media/photo_2022-04-06_20-28-59.jpg" alt="Здесь была моя фотка(:" width="200" class="avatar"></td>
+            <div class="info-text">
+            <h1>Павел Варцаба</h1>
+            <p><em>Я фул стек разработчик</em></p>
+            <p>Я люлблю путешествовать, заниматься спротом и програмировать</p>
+            <h4> Мои социальные сети</h4>
+            <a href="https://instagram.com/" target="_blank">https://instagram.com/</a> |
+            <a href="https://linkedin/" target="_blank">https://linkedin/</a>
+            </ul>
+        </div>
+        </div>
 
 
-    <hr>
 
-    <h2> Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://instagram.com/" target="_blank">https://instagram.com/</a></li>
-        <li><a href="https://linkedin/" target="_blank">https://linkedin/</a></li>
-    </ul>
-
-    <hr>
+        <hr>
 
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Спорт</li>
-        <li>Обучаться</li>
-        <li>путешествовать</li>
-    </ol>
 
-    <hr>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Спорт</li>
+                <li>Обучаться</li>
+                <li>путешествовать</li>
+            </ol>
 
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>UDP</td>
-            <td>System administrator</td>
-            <td>2021-2022</td>
-        </tr>
-        <tr>
-            <td>RIM</td>
-            <td>System administrator</td>
-            <td>2020-2021</td>
-        </tr>
-    </table>
-
-    <hr>
-
-
-    <h2 href="MyProjects.com">Мои проекты</h2>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>UDP</td>
+                    <td>System administrator</td>
+                    <td>2021-2022</td>
+                </tr>
+                <tr>
+                    <td>RIM</td>
+                    <td>System administrator</td>
+                    <td>2020-2021</td>
+                </tr>
+            </table>
+        </div>
 
 
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите ваш email...">
+        <div class="card bg-red">
+            <h2 href="MyProjects.com">Мои проекты</h2>
+        </div>
 
-        <br>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите ваш email...">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+           
+                <input type="submit" class="btn" placeholder="Связаться!">
 
-        <label for="text">Ваше сообщение:</label>
-        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </form>
+        </div>
 
-        <br>
-
-        <input type="submit" placeholder="Связаться!">
-    </form>
+        <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div style="margin-bottom: 500px;">
+    </div>
 </body>
+
 </html>
